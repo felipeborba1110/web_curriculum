@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<head>
+    <title>Curriculo - Felipe Borba</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2246/2246713.png">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<style>
+    body{
+        display: flex;
+        background-color: rgb(43, 46, 51);
+        font-family: 'Roboto';
+        font-size: 20px;
+        color: rgb(233, 233, 233);
+    }
+
+    .lista{
+        list-style-type: circle;
+        padding-left: 20px;
+        margin-top: 0px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    a:link{
+        color:aqua;
+    }
+
+    a:hover{
+        color:rgb(221, 34, 97);
+    }
+
+    a:visited{
+        color: bisque;
+    }
+
+    a:active{
+        color: greenyellow;
+    }
+
+    span{
+        font-weight: bold;
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    h4{
+        font-size: 22px;
+        font-weight: lighter;
+        margin-top: 1px;
+        margin-bottom: 8px;
+    }
+
+    p{
+        padding-left: 40px;
+    }
+
+    hr{
+        width: 100%;
+        margin-bottom: 15px;
+        margin-top: 40px;
+    }
+
+    .div-flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-flex-row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-item{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+    }
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    #side-pannel{
+        width: 20%;
+        min-width: 300px;
+        min-height: 100%;
+        border-color: rgb(255, 255, 255);
+        border-right: solid 2px;
+        position: relative;
+        padding: 30px;
+        background-color: rgb(52, 54, 58);
+        
+    }
+
+    #profile{
+        width:200px;
+        border-radius: 50%;
+    }
+
+    #about{
+        font-size: 25px;
+    }
+
+    .titulo{
+        padding-top: 2%;
+        padding-bottom: 1%;
+        margin: -1%;
+    }
+
+    .sub_titulo{
+        margin-bottom: 15px;
+        margin-top: 1px;
+    }
+
+    .center{
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    .blank{
+        width: 100%;
+        height: 65vh;
+    }
+
+    .small{
+        flex: 1;
+    }
+
+    .always{
+        position: fixed;
+        margin-left: 25px;
+    }
+
+    @media(max-width: 800px){
+        .div-flex{
+            flex-direction: column;
+        }
+
+        .div-flex-row{
+            flex-direction: column;
+        }
+
+        #side-pannel{
+            display: none;
+        }
+    }
+
+</style>
+<body>
+    <div id="side-pannel">
+        <div class="div-flex always">
+            <div class="div-flex small">
+                <h3>Sumário</h3>
+                <ul class="lista">
+                    <li><a href="#about">Quem eu sou</a></li>
+                    <li><a href="#academic">Formação Acadêmica</a></li>
+                    <li><a href="#lang">Línguas</a></li>
+                    <li><a href="#certified">Certificados</a></li>
+                </ul>
+            </div>
+            <div class="div-flex blank">
+            </div>
+            <div class="div-flex" id="contact">
+                <h3 class="sub_titulo">Contato</h3>
+                <div>
+                Telefone: (51) 981682416<br/>
+                Email:<br/>    felipeborba1110@gmail.com<br/>
+                LinkedIn: <a target="_blank" href="https://linkedin.com/in/felipeborba1110">/felipeborba1110</a><br/>
+                Github: <a target="_blank" href="https://github.com/felipeborba1110">/felipeborba110</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content">  
+        <div class="div-flex center">
+            <h1 class="titulo">Currículo</h1>
+        </div>
+        <div class="div-flex-row">
+            <div class="flex-item">
+                <img id="profile" src="/foto.jpg">
+            </div>
+            <div class="flex-item">
+                <div id="about">
+                    <h3 class="sub_titulo">Quem eu sou:</h3>
+                </div>
+                <div> 
+                    <h4>Me chamo <span>Felipe Borba</span>, sou um jovem cheio de vontade de aprender e curioso para conhecer novas
+                    oportunidades de aprimoramento pessoal, ademais busco adquirir
+                    experiência profissional e contribuir com minhas habilidades para o
+                    crescimento do mercado de teconologia.</h4>
+                    🎓Aluno de Ciência da Computação na UniRitter</br>
+                    📍Porto Alegre, Rio Grande do Sul, Brasil</br>
+                </div>
+            </div>  
+        </div>
+        <hr/>
+        <div class="flex-item"> 
+            <div class="flex-item">
+                <div id="academic">
+                    <h3 class="sub_titulo">Formação Acadêmica:</h3>
+                </div>
+                <div>
+                    <p> 
+                        UniRitter - Bacharelado, Ciência da Computação · (fevereiro de 2024 - dezembro de 2028) <br/>
+                        Colégio Israelita Brasileiro
+                        · (2022 - 2023)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item"> 
+            <div class="flex-item">
+                <div id="lang">
+                    <h3 class="sub_titulo">Línguans:</h3>
+                </div>
+                <div>
+                    <p> 
+                        Inglês (Bilingue)<br/>
+                        Português (Nativo)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item"> 
+            <div class="flex-item">
+                <div id="certified">
+                    <h3 class="sub_titulo">Certificados:</h3>
+                </div>
+                <div>
+                    <p> 
+                        Endpoint Security<br/>
+                        Google Workspace no Mercado deTrabalho<br/>
+                        Java Foundations
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item"> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum nec diam in ornare. Duis sit amet ex non risus facilisis placerat vitae vitae ex. Nulla vel efficitur lacus. Donec sit amet sagittis justo, eget vehicula augue. Curabitur accumsan efficitur commodo. Fusce euismod purus id quam mattis, vitae porttitor enim tincidunt. Curabitur sagittis quis urna nec tincidunt. Cras efficitur, urna in iaculis finibus, turpis lectus aliquet felis, et auctor velit neque ut lacus. Maecenas gravida vel odio in varius.
+            Etiam a aliquet urna, ut consectetur mi. Ut elementum molestie mauris, id viverra mauris dictum sed. Maecenas felis urna, consectetur eget eros id, luctus accumsan metus. Quisque egestas, sem quis efficitur elementum, mi sem vulputate massa, sed gravida turpis magna non ligula. Nunc maximus risus at aliquam ullamcorper. Pellentesque at turpis vel erat scelerisque bibendum. Donec pulvinar, nunc in posuere convallis, massa eros dapibus sapien, et iaculis nunc quam vel turpis. Praesent odio velit, placerat quis quam et, accumsan ultricies dolor. Donec interdum bibendum sem quis luctus. Aenean ac efficitur justo, non placerat velit. Nulla convallis ipsum tincidunt, tristique mi id, viverra ante. Sed quis sapien arcu. Quisque eleifend mauris libero, eu placerat eros aliquam non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            Morbi hendrerit urna sit amet semper laoreet. Nunc non ullamcorper urna. Mauris rutrum odio quis erat sagittis, eget rutrum est sollicitudin. Integer arcu augue, accumsan a tellus id, dictum elementum sem. Nam ac lorem massa. Pellentesque neque lacus, pellentesque nec suscipit ut, ultrices vel lorem. Mauris tempor ipsum ac arcu rutrum malesuada nec id eros. Quisque odio magna, tempor vel enim sed, ultrices vestibulum sapien. Praesent condimentum pulvinar lorem, sed viverra ipsum eleifend in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent ac magna sollicitudin, dapibus ex vitae, varius sapien. Quisque facilisis consectetur malesuada. Quisque finibus lectus eu nulla bibendum, finibus consectetur odio pretium. Nunc ornare placerat elit eget consectetur.
+            Aenean a sapien ut urna faucibus tincidunt. Pellentesque non enim eu turpis faucibus maximus eget at justo. Aliquam ornare lectus a ultricies placerat. Vestibulum interdum, elit sit amet molestie vulputate, quam sapien convallis ex, sollicitudin semper risus mauris ut lacus. Morbi faucibus velit sed ipsum convallis ultrices a ut augue. Morbi nec quam ex. Quisque vitae orci id arcu laoreet fringilla nec a nunc. Aliquam id justo sed lorem vehicula pellentesque sed ac felis. Sed ornare neque eu dignissim varius.
+            Integer in rutrum diam. Nunc quam ex, pharetra id porttitor ut, ultrices a turpis. Ut venenatis lacus a dui cursus, non sollicitudin lorem aliquet. Integer tristique leo sed purus luctus, non cursus justo ultrices. Nunc nec sem vitae nisi tempor facilisis. Donec luctus eget dolor eget lobortis. Proin elementum diam et velit hendrerit dapibus. Integer in metus ante. Duis non est eu odio facilisis tempor sed nec lectus. Nullam molestie augue nec mauris ullamcorper, rhoncus convallis lectus faucibus. Nullam a aliquam enim, eu luctus orci. Phasellus vehicula commodo risus sit amet efficitur. Etiam vel lectus at.
+        </div>
+        <div id="fim" class="flex-item"> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum nec diam in ornare. Duis sit amet ex non risus facilisis placerat vitae vitae ex. Nulla vel efficitur lacus. Donec sit amet sagittis justo, eget vehicula augue. Curabitur accumsan efficitur commodo. Fusce euismod purus id quam mattis, vitae porttitor enim tincidunt. Curabitur sagittis quis urna nec tincidunt. Cras efficitur, urna in iaculis finibus, turpis lectus aliquet felis, et auctor velit neque ut lacus. Maecenas gravida vel odio in varius.
+            Etiam a aliquet urna, ut consectetur mi. Ut elementum molestie mauris, id viverra mauris dictum sed. Maecenas felis urna, consectetur eget eros id, luctus accumsan metus. Quisque egestas, sem quis efficitur elementum, mi sem vulputate massa, sed gravida turpis magna non ligula. Nunc maximus risus at aliquam ullamcorper. Pellentesque at turpis vel erat scelerisque bibendum. Donec pulvinar, nunc in posuere convallis, massa eros dapibus sapien, et iaculis nunc quam vel turpis. Praesent odio velit, placerat quis quam et, accumsan ultricies dolor. Donec interdum bibendum sem quis luctus. Aenean ac efficitur justo, non placerat velit. Nulla convallis ipsum tincidunt, tristique mi id, viverra ante. Sed quis sapien arcu. Quisque eleifend mauris libero, eu placerat eros aliquam non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            Morbi hendrerit urna sit amet semper laoreet. Nunc non ullamcorper urna. Mauris rutrum odio quis erat sagittis, eget rutrum est sollicitudin. Integer arcu augue, accumsan a tellus id, dictum elementum sem. Nam ac lorem massa. Pellentesque neque lacus, pellentesque nec suscipit ut, ultrices vel lorem. Mauris tempor ipsum ac arcu rutrum malesuada nec id eros. Quisque odio magna, tempor vel enim sed, ultrices vestibulum sapien. Praesent condimentum pulvinar lorem, sed viverra ipsum eleifend in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent ac magna sollicitudin, dapibus ex vitae, varius sapien. Quisque facilisis consectetur malesuada. Quisque finibus lectus eu nulla bibendum, finibus consectetur odio pretium. Nunc ornare placerat elit eget consectetur.
+            Aenean a sapien ut urna faucibus tincidunt. Pellentesque non enim eu turpis faucibus maximus eget at justo. Aliquam ornare lectus a ultricies placerat. Vestibulum interdum, elit sit amet molestie vulputate, quam sapien convallis ex, sollicitudin semper risus mauris ut lacus. Morbi faucibus velit sed ipsum convallis ultrices a ut augue. Morbi nec quam ex. Quisque vitae orci id arcu laoreet fringilla nec a nunc. Aliquam id justo sed lorem vehicula pellentesque sed ac felis. Sed ornare neque eu dignissim varius.
+            Integer in rutrum diam. Nunc quam ex, pharetra id porttitor ut, ultrices a turpis. Ut venenatis lacus a dui cursus, non sollicitudin lorem aliquet. Integer tristique leo sed purus luctus, non cursus justo ultrices. Nunc nec sem vitae nisi tempor facilisis. Donec luctus eget dolor eget lobortis. Proin elementum diam et velit hendrerit dapibus. Integer in metus ante. Duis non est eu odio facilisis tempor sed nec lectus. Nullam molestie augue nec mauris ullamcorper, rhoncus convallis lectus faucibus. Nullam a aliquam enim, eu luctus orci. Phasellus vehicula commodo risus sit amet efficitur. Etiam vel lectus at.
+        </div>
+    </div>
+</body>
